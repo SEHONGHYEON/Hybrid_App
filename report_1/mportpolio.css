@@ -1,0 +1,54 @@
+﻿/* 스타일 초기화 */
+* { margin: 0px ; padding: 0px ; font-family: "맑은고딕"}
+header, body, footer { font-size: 14px; width: 100%;}
+header, footer { text-align : center ; }
+body { margin: auto; }
+footer { position: fixed; bottom: 0px; text-decoration: black;}
+
+/* 공통 스타일 */
+h1 { padding: 15px; font-size: 30px ; color: black; }
+h2 { font-size: 15px; color: white; }
+h3 { margin: 10px; font-size: 15px; color: black; margin-left: 50px;}
+h1, h2 { background: skyblue; background-repeat: repeat-x; }
+a { text-decoration:none !important }
+
+
+
+img { border: 0; padding: 2px; }
+p{margin-left: 50px; line-height: 50px;}
+
+
+
+nav { margin: 5px 5px; margin-right: 50px;}
+nav > span > a { font-style: bold; margin: 0 ; padding: 3px; border: 2px solid:black; float: right; text-decoration: none; background: skyblue; color: black; }
+nav > span > a:hover { background: #3C8FFC; color: white; }
+@media only screen and (min-width: 321px) and (orientation: landscape) {
+	section { width: 80%; float: left; }
+	aside { width: 20%; text-align: center; float: right; }
+	footer { clear: both;  }
+}
+.content  { clear: both; }
+.section1 ul li { list-style-position: inside; margin-left: 50px; line-height: 30px;}
+.portal { width: 80px; margin:50px;}
+margin-left: 50px}
+
+/* mintro.html 적용 스타일 */
+#stu-pic { width: 6em; height: 8em; float: left; }
+.stu{width:150px; margin-left: 50px}
+
+
+
+/* minfo.html 적용 스타일 */
+#year-table { table-layout: auto; width: 80%; height:200px; border-collapse: collapse;  }
+#year-table thead { background:beige; }
+#table2 { table-layout: auto; width: 80%; border-collapse: collapse;  }
+#table2 thead { background:beige; }
+
+#logo { position: fixed; top:130px; left: 70px; opacity: 0.3; }
+
+/* mstudy.html 적용 스타일 */
+video { margin: 5px; width: 300px; height: 200px; }
+
+/* mcareer.html 적용 스타일 */
+.semi-pic { width:400px; height: 300px; }
+#pic-container { overflow: hidden; }
