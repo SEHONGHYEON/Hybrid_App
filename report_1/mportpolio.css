@@ -1,4 +1,4 @@
-﻿/* 스타일 초기화 */
+
 * { margin: 0px ; padding: 0px ; font-family: "맑은고딕"}
 header, body, footer { font-size: 14px; width: 100%;}
 header, footer { text-align : center ; }
@@ -18,15 +18,11 @@ img { border: 0; padding: 2px; }
 p{margin-left: 50px; line-height: 50px;}
 
 
-
 nav { margin: 5px 5px; margin-right: 50px;}
 nav > span > a { font-style: bold; margin: 0 ; padding: 3px; border: 2px solid:black; float: right; text-decoration: none; background: skyblue; color: black; }
 nav > span > a:hover { background: #3C8FFC; color: white; }
-@media only screen and (min-width: 321px) and (orientation: landscape) {
-	section { width: 80%; float: left; }
-	aside { width: 20%; text-align: center; float: right; }
-	footer { clear: both;  }
-}
+
+
 .content  { clear: both; }
 .section1 ul li { list-style-position: inside; margin-left: 50px; line-height: 30px;}
 .portal { width: 80px; margin:50px;}
@@ -44,10 +40,6 @@ margin-left: 50px}
 #table2 { table-layout: auto; width: 80%; border-collapse: collapse;  }
 #table2 thead { background:beige; }
 
-#logo { position: fixed; top:130px; left: 70px; opacity: 0.3; }
-
-/* mstudy.html 적용 스타일 */
-video { margin: 5px; width: 300px; height: 200px; }
 
 /* mcareer.html 적용 스타일 */
 .semi-pic { width:400px; height: 300px; }
