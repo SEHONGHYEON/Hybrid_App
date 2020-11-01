@@ -1,0 +1,205 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>jQuery Mobile</title>
+
+	<link rel="stylesheet" href="jquery.mobile/jquery.mobile-1.4.5.min.css"/>
+	<script src="jquery.mobile/jquery-1.11.1.min.js"></script>
+	<script src="jquery.mobile/jquery.mobile-1.4.5.min.js"></script>
+
+	<script src="cordova.js"></script>
+
+<style>
+   li { }
+	 img { max-width: 100%;}
+	 p {text-align: left;}
+  .picture { list-style:none; padding:0; margin:0; }
+  .picture li { float:left; width:50%;}
+  .picture li a {display:block; margin:5px; border: 1px }
+  .picture li img { display:block; width:50%;  height:auto;}
+  .picture li img:hover { display:block; width:100%;  height:auto;}
+	.map-responsive{
+		overflow:hidden;
+		padding-bottom:56.25%;
+		position:relative;
+		height:0;
+		}
+		.map-responsive iframe{
+		left:0;
+		top:0;
+		height:100%;
+		width:100%;
+		position:absolute;
+		}
+</style>
+</head>
+
+<body>
+<div data-theme="b">
+	<div data-role="page" id="home">
+		<div data-role="header" data-theme="b">
+			<h1>동의과학대 소개 앱</h1>
+		</div>
+		<div data-role="content" style="text-align:center">
+				<img src="dit.png">
+			<ul data-role="listview" data-inset="true">
+				<li><a href="#intro">대학소개</a></li>
+				<li><a href="#movie" data-rel="dialog">홍보영상</a></li>
+				<li><a href="#board">대학소식</a></li>
+				<li><a href="#gallery">활동사진</a></li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="a">
+			<h1>Made by. 유승현</h1>
+		</div>
+	</div>
+
+	<div data-role="page" id="intro" data-theme="a">
+		<div data-role="header" data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+			<h1>대학 소개</h1>
+		</div>
+		<div data-role="content">
+				<div  style="text-align:center">
+						<img src="found.png" style="max-width: 100%; height="auto;>
+				</div>
+			<div data-role="collapsible-set" data-theme="b" data-content-theme="a">
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>설립이념</h3>
+					<p>
+						본 대학은 동의학원 설립자이며 이사장인 故 석당 김임식 박사의 학원설립 이념인 '동의지천(東義知天)'에 바탕을 두고 있다. '동의(東義)'와 '지천(知天)'은 동의과학대학교가 지향해야 할 대명제이자 교육 지표로서 동의학원의 설립이념이자 건학정신이라고 할 수 있다.
+				<ul>[ 교 육 방 침 ]
+						<li>	전문 기술인으로서 갖추어야 할 교양과 전문기술을 배양하여 창의적인 직업기술인 양성(창의적인 기술인 양성)</li>
+						<li>	산학협동교육의 강화로 산업사회에 이바지하는 교육과정의 개발(산업사회의 협동인 양성)	</li>
+						<li>	발전하는 산업사회의 기술개발에 기여할 수 있는 자질과 능력 배양(성실하고 유능한 직업 기술인 배양)	</li>
+						<li>	면학분위기 조성을 위한 쾌적한 교육환경 조성(정서 순화)</p><br></ul>
+				</div>
+				<div data-role="collapsible">
+					<h3>교육목표</h3>
+					<p>대한민국 교육의 근본이념에 입각하여 국가 산업 발전에 필요한 전문지식과 이론을 교수 연구하고 재능을 연마하여 국가 발전에 필요한 전문 기술인을 양성한다.
+						<div  style="text-align:center">
+						<img src="value.png" style="max-width: 100%; height="auto;>
+						</div>
+
+					</p>
+				</div>
+				<div data-role="collapsible" >
+					<h3>주소</h3>
+					<p><b>부산광역시 부산진구 양지로 54 동의과학대학교</b> <br>
+						- 대표전화 : 051-852-0011~3 / 051-860-3114 <br>
+						- 팩스번호 : 051-860-3270
+						<div class="map-responsive">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13046.532258033125!2d129.0725323!3d35.1657709!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xca0acf886f784030!2z64-Z7J2Y6rO87ZWZ64yA7ZWZ6rWQ!5e0!3m2!1sko!2skr!4v1604204100538!5m2!1sko!2skr"
+						 width="300" height="100" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+						 </p>
+						</div>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>Made by. 유승현</h1>
+		</div>
+	</div>
+
+	<div data-role="page" id="movie" data-theme="b">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<h1>홍보 영상</h1>
+		</div>
+		<div data-role="content" >
+			<div class="ui-bar ui-bar-e">학과소개 영상</div><br/>
+			<li><iframe width="100%" height="auto" src="https://www.youtube.com/embed/AXET-aD3Gp0"></iframe></li><br/>
+			<div class="ui-bar ui-bar-e">시설소개 영상</div><br/>
+		<li><iframe width="100%" height="auto" src="https://www.youtube.com/embed/_SqEYR1GyUg"></iframe></li><br/>
+			</video></li>
+		</div>
+		<div data-role="footer" data-theme="b">
+		</div>
+	</div>
+
+
+	<div data-role="page" id="board">
+		<div data-role="header">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+			<h1>교내소식</h1>
+		</div>
+		<div data-role="content">
+				<div style="text-align:center">
+						<img src="news.png" style="max-width: 100% ; width:100%; height:100px;">
+				</div>
+			<div data-role="collapsible-set" data-theme="b" data-content-theme="a">
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>[LINC+사업단]2020 DIT 캡스톤 디자인 경진대회</h3>
+
+
+					<p>	<div data-role="content">
+								<div  style="text-align:center">
+										<img src="cap1.png" style="max-width: 100%; height"=auto;>
+								</div>
+우리대학은 지난 8일 대학 진리관에서 창의적 인재 양성을 위한 ‘2020 DIT 캡스톤디자인 경진대회’를 개최했다.<br> 대학 LINC+사업단이 주관하는 이번 경진대회는
+ 학생들의 창의적 문제해결 능력과 협업을 통한 직무수행 능력을 높이기 위해 기획된 것으로, 전 학과 및 계열 학생이 참가하는 종합 경진대회다. 8일 대회에는 63개 팀, 학생 337명이 출전하였으며,
+ 창의성과 실용화 가능성이 돋보이는 우수한 작품들 다수가 출품돼 치열한 경합이 펼쳐졌다.<br>
+본선 심사는 부산디자인진흥원 배기범 본부장, 랜티스 김용훈 대표, 피앤아이특허 이강현 변리사 등 관련 기관 관계자가 맡았으며,
+ 창의성, 기술성, 작품성, 발표력 등 4개 부문이 종합적으로 고려돼 수상자가 판가름 났다. 공개 심사를 통해 대상 1점, 금상 4점, 은상 6점, 동상 10팀 등 입상작 21점이 최종 선정됐다.</p>
+</div>
+</div>
+
+				<div data-role="collapsible">
+					<h3>[AI센터]산·학·관 협력 AI교육 역량 강화 워크숍</h3>
+					<p>
+						<div  style="text-align:center">
+						<img src="ai.png" style="max-width: 100%; height="auto;>
+						</div>
+					우리대학(총장 김영도)은 대학 모바일AI서브센터(센터장 김종현, 이하 동의과학대 AI센터)가 부산광역시 교육청(교육감 김석준)과 공동으로 지난 27일 오후 4시 대학 본관 대회의실에서 부산지역 인공지능 교육 발전을 도모하기 위한 ‘산·학·관 협력 인공지능 교육 역량 강화 워크숍’을 개최했다고 밝혔다.
+					27일 열린 워크숍은 고교, 대학, 기업에서 부산 AI 교육 성과와 기업 사례를 공유하고 4차 산업혁명 시대를 선도하는 부산의 올바른 AI 교육 방향과 비전을 모색하기 위해 마련된 것으로,
+					동의과학대 AI센터, 부산광역시 교육청, 부산컴퓨터과학고등학교를 비롯한 AI 6개 고교 AI 교육 교원, 부산정보산업진흥원 AI센터, 엔컴㈜ 등 산·학·관 관계자 20여 명이 참석했다.
+
+					</p>
+				</div>
+
+				</div>
+			</div>
+			<div data-role="footer" data-position="fixed" data-theme="b">
+				<h1>Made by. 유승현</h1>
+			</div>
+		</div>
+
+
+	<div data-role="page" id="gallery"  data-theme="b">
+		<div data-role="header" data-position="fixed"  data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+			<h1>활동 사진</h1>
+		</div>
+		<div data-role="content">
+            <ul class="picture">
+				<li><a href="4-1.jpg" rel="external"><img src="4-1.jpg" /></a></li>
+				<li><a href="4-2.jpg" rel="external"><img src="4-2.jpg" /></a></li>
+				<li><a href="4-3.jpg" rel="external"><img src="4-3.jpg" /></a></li>
+				<li><a href="4-4.jpg" rel="external"><img src="4-4.jpg" /></a></li>
+				<li><a href="4-5.jpg" rel="external"><img src="4-5.jpg" /></a></li>
+				<li><a href="4-6.jpg" rel="external"><img src="4-6.jpg" /></a></li>
+				<li><a href="4-7.jpg" rel="external"><img src="4-7.jpg" /></a></li>
+				<li><a href="4-8.jpg" rel="external"><img src="4-8.jpg" /></a></li>
+				<li><a href="4-9.jpg" rel="external"><img src="4-9.jpg" /></a></li>
+				<li><a href="4-10.jpg" rel="external"><img src="4-10.jpg" /></a></li>
+				<li><a href="4-11.jpg" rel="external"><img src="4-11.jpg" /></a></li>
+
+            </ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>Made by 유승현</h1>
+		</div>
+	</div>
+</div></p>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
